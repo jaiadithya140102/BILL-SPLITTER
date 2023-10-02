@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splitter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="billamount bx">
+            BillAmount
+            <div class="AmountInput">
+                <span>Rs:</span>
+                <input type="text" onkeyup="calculate()" id="BillAmt">
+            </div>
+        </div>
+
+        <div class="Tipamount bx">
+            Tip
+            <div class="AmountInput">
+                <span>%</span>  
+                <input type="text" onkeyup="calculate()" id="TipAmt">
+            </div>
+        </div>
+
+        <div class="footerDiv bx">
+            <div class="left-bottom">
+            TotalPerson
+            <div class="btn">
+              <button id="PlusButton" class="btn-1">+</button>
+            <div id="numofpeople">1</div>
+              <button id="MinusButton" class="btn-1">-</button>
+              </div>
+              </div>
+              <div class="right-bottom">
+              PER PERSON:
+              <div id="result"></div>
+              </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
